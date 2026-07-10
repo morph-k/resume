@@ -31,3 +31,7 @@ main*
 .idea/
 .vscode/
 *.code-workspace
+
+# Nix
+result
+result-*
