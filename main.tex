@@ -17,6 +17,7 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{amssymb}
+\usepackage{tabularx}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -123,25 +124,19 @@ Linux-focused technology professional with hands-on experience in cybersecurity,
 
 \section{Skills Summary}
     \vspace{1pt}
-	\begin{itemize}[leftmargin=*, label={}]
-	\resumeSubItem{Systems \& Infrastructure}{Linux, NixOS, ZFS, LUKS, Docker, Podman, QEMU, RISC-V, Vagrant}
-    \vspace{1pt}
-	\resumeSubItem{Programming}{~~~~~~~~~~~~~~~~~~Python, Bash, Lua, Nix, C, Rust, PowerShell, awk}
-    \vspace{1pt}
-	\resumeSubItem{Cloud \& DevOps}{~~~~~~~~~~~~~Azure, Azure ETL, CI/CD Pipelines}
-    \vspace{1pt}
-	\resumeSubItem{Tools}{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Git, Neovim, Emacs, SQL, Ansible, Wireshark}
-    \vspace{1pt}
-	\resumeSubItem{Certifications}{~~~~~~~~~~~~~~~~~~~CompTIA Security+, RHCSA}
-    \vspace{1pt}
-        \resumeSubItem{Cybersecurity}{~~~~~~~~~~~~~~~~~~Network \& USB Protocol Traffic Analysis, FDE, Log Analysis, OSINT}
-    \vspace{1pt}
-        \resumeSubItem{GenAI}{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RAG, Vector Search, LLM Application Development, MLOps}
-    \vspace{1pt}
-        \resumeSubItem{Cryptography}{~~~~~~~~~~~~~~~~~~~zk-SNARKs, KZG10 Polynomial Commitments, Ring Signatures}
-	%\resumeSubItem{Soft Skills}{~~~~~~~Leadership, Effective Verbal and Written Communication Skills, Time Management}
+	{\small
+	\begin{tabularx}{\textwidth}{@{}l@{\hspace{1em}}X@{}}
+	\textbf{Systems \& Infrastructure:} & Linux, NixOS, ZFS, LUKS, Docker, Podman, QEMU, RISC-V, Vagrant \\[2pt]
+	\textbf{Programming:}               & Python, Bash, Lua, Nix, C, Rust, PowerShell, awk \\[2pt]
+	\textbf{Cloud \& DevOps:}           & Azure, Azure ETL, CI/CD Pipelines \\[2pt]
+	\textbf{Tools:}                     & Git, Neovim, Emacs, SQL, Ansible, Wireshark \\[2pt]
+	\textbf{Certifications:}            & CompTIA Security+, RHCSA \\[2pt]
+	\textbf{Cybersecurity:}             & Network \& USB Protocol Traffic Analysis, FDE, Log Analysis, OSINT \\[2pt]
+	\textbf{GenAI:}                     & RAG, Vector Search, LLM Application Development, MLOps \\[2pt]
+	\textbf{Cryptography:}              & zk-SNARKs, KZG10 Polynomial Commitments, Ring Signatures \\
+	%\textbf{Soft Skills:}              & Leadership, Effective Verbal and Written Communication Skills, Time Management \\
+	\end{tabularx}}
     \vspace{7pt}
-\end{itemize}
 
 \vspace{-17pt}
 %-----------RELEVANT EXPERIENCE-----------------
