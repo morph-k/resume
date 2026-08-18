@@ -1,0 +1,26 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Morphy Kuffour's Resume</title>
+</head>
+
+<body>
+    <pdf-viewer id="viewer"></pdf-viewer>
+    <script src="https://unpkg.com/pdfobject@2.2.5/pdfobject.min.js"></script>
+    <script>
+        var options = {
+            pdfOpenParams: {
+                view: 'FitV',
+                scrollbar: '1',
+                toolbar: '0',
+                statusbar: '1',
+                messages: '0',
+                navpanes: '1'
+            }
+        };
+        PDFObject.embed("./resume.pdf", false, options);
+    </script>
+</body>
+
+</html>
