@@ -28,9 +28,29 @@
           '';
         };
 
+        # `nix build .#typst` -> compiles typst/resume.typ into result/resume.pdf
+        packages.typst = pkgs.stdenvNoCC.mkDerivation {
+          pname = "resume-typst";
+          version = "1.0";
+          src = ./.;
+          nativeBuildInputs = [ pkgs.typst ];
+          buildPhase = ''
+            typst compile typst/resume.typ resume.pdf
+          '';
+          installPhase = ''
+            mkdir -p $out
+            cp resume.pdf $out/
+          '';
+        };
+
         # `nix develop` -> shell with the LaTeX toolchain on PATH
         devShells.default = pkgs.mkShell {
           packages = [ tex ];
+        };
+
+        # `nix develop .#typst` -> shell with the Typst toolchain on PATH
+        devShells.typst = pkgs.mkShell {
+          packages = [ pkgs.typst ];
         };
       });
 }
