@@ -9,6 +9,9 @@ main*
 *.fls
 *.fdb_latexmk
 
+# Typst build output
+typst/resume.pdf
+
 # macOS system files
 .DS_Store
 .AppleDouble
